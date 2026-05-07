@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { Routes } from '../Routes/StackNavigator';
+import Routes from '../Routes/index';
 import ColorTypes from '../assets/ColorTypes';
 import ArrowBack from '../components/ArrowBackPage';
 import InputField from '../components/InputField';
@@ -16,7 +16,7 @@ export default function SignIn({ navigation }) {
       <InputField label="Senha" placeholder="Digite sua senha" secure={true} icon={<MaterialIcons name="password" size={24} color={ColorTypes.TEXT_TITLE} />} />
     </View>
     <View style={styles.buttonContainer}>
-      <ButtonComponent text="Entrar" function={() => navigation.navigate(Routes.HOME)}/>
+      <ButtonComponent text="Entrar" function={() => navigation.navigate(Routes.DRAWER)}/>
       <Text style={styles.titleSignUp}>Não tem uma conta? Cadastre-se</Text>
       <ButtonComponent text="Cadastrar" function={() => navigation.navigate(Routes.SIGNUP)}/>
     </View>

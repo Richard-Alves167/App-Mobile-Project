@@ -1,5 +1,5 @@
 import { StyleSheet, View, Text, ImageBackground, Image } from 'react-native';
-import { Routes } from '../Routes/StackNavigator';
+import Routes from '../Routes/index';
 import ColorTypes from '../assets/ColorTypes';
 import ArrowBack from '../components/ArrowBackPage';
 

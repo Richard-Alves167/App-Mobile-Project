@@ -1,37 +1,39 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Routes from '.';
+import DrawerNavigator from '../Routes/DrawerNavigator';
 import SignInScreen from '../screens/SignIn';
 import SignUpScreen from '../screens/SignUp';
 import HomeScreen from '../screens/Home';
 
 const Stack = createNativeStackNavigator()
 
-export const Routes = {
-        SIGNIN: 'SignIn',
-        SIGNUP: 'SignUp',
-        HOME: 'Home',
-        DASHBOARD: 'Dashboard',
-    }
-
 export default function StackNavigation() {
 
     return (
-        <Stack.Navigator>
+        <Stack.Navigator 
+        initialRouteName={Routes.SIGNIN}
+        >
             <Stack.Screen
                 name={Routes.SIGNIN}
                 component={SignInScreen}
+                options={{ 
+                    headerTitle: 'Autenticação' 
+                }}
             />
             <Stack.Screen
                 name={Routes.SIGNUP}
                 component={SignUpScreen}
+                options={{ 
+                    headerTitle: 'Cadastro' 
+                }}
             />
             <Stack.Screen
-                name={Routes.HOME}
-                component={HomeScreen}
+                name={Routes.DRAWER}
+                component={DrawerNavigator}
+                options={{ 
+                    headerShown: false 
+                }}
             />
-            {/* <Stack.Screen
-                name={Routes.DASHBOARD}
-                component={DashboardScreen}
-            /> */}
         </Stack.Navigator>
     )
 }
