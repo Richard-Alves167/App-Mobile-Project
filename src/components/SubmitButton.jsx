@@ -13,17 +13,18 @@ export default function SubmitButton(props) {
 
 const styles = StyleSheet.create({
     text: {
-        color: ColorTypes.MEIANOITE,
+        color: ColorTypes.TEXT_TITLE,
         fontSize: 16,
-        minWidth: 120,
         textAlign: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: ColorTypes.DARK
     },
     button: {
+        width: 200,
         padding: 10,
         borderRadius: 7,
-        backgroundColor: ColorTypes.AMETISTASUAVE,
+        backgroundColor: ColorTypes.BACKGROUND_BUTTON,
         borderWidth: 2,
-        borderColor: ColorTypes.MEIANOITE,
+        borderColor: ColorTypes.PRIMARY_BROWN,
     }
 });
