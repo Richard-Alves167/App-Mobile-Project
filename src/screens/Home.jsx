@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 400,
         contain: 'cover',
+        borderTopWidth: 2,
         borderBottomWidth: 10,
         borderColor: ColorTypes.TEXT_TITLE,
         justifyContent: 'center',
