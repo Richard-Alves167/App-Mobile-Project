@@ -1,4 +1,4 @@
-export const ColorTypes = Object.freeze({
+const ColorTypes = Object.freeze({
     PLATINAPALIDO: '#D9D8D9',
     LAVANDAPASTEL: '#B3A3BA',
     AMETISTASUAVE: '#8D769A',
@@ -7,3 +7,5 @@ export const ColorTypes = Object.freeze({
     MEIANOITE: '#28193D',
     ABISMO: '#10091D'
 });
+
+export default ColorTypes;
