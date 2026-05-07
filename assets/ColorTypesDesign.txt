@@ -1,0 +1,27 @@
+PALETA DE CORES - TONS DE ROXO E LAVANDA
+
+Esta lista contém os códigos hexadecimais, nomes sugeridos e descrições dos tons presentes na imagem:
+
+1. #D9D8D9 - Platina Pálido
+   Descrição: Um cinza-claro com um fundo subtil e levemente arroxeado.
+
+2. #B3A3BA - Lavanda Pastel
+   Descrição: Um tom de lilás suave, acinzentado e elegante.
+
+3. #8D769A - Ametista Suave
+   Descrição: Roxo de intensidade média com baixa saturação.
+
+4. #68507B - Púrpura Médio
+   Descrição: Um tom de uva clássico, sóbrio e equilibrado.
+
+5. #46315C - Roxo Imperial
+   Descrição: Um tom de roxo profundo, rico e denso.
+
+6. #28193D - Meia-noite
+   Descrição: Um roxo muito escuro, aproximando-se do preto.
+
+7. #10091D - Abismo / Corvo
+   Descrição: O tom mais escuro da escala, quase um preto puro com reflexos roxos.
+
+---
+Sugestão de uso: Design de interfaces, branding de luxo ou degradês sofisticados.

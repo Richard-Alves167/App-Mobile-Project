@@ -3,9 +3,9 @@ import StackNavigation from './navigation/AppNavigator';
 
 export default function App() {
   return (
-<NavigationContainer>
-  <StackNavigation/>
-</NavigationContainer>
+    <NavigationContainer>
+      <StackNavigation/>
+    </NavigationContainer>
   );
 }
 
