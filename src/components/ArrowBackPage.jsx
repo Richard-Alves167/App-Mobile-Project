@@ -1,13 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Pressable } from 'react-native';
 import ColorTypes from '../assets/ColorTypes';
 import AntDesign from '@expo/vector-icons/AntDesign';
 
-export default function InputField() {
+export default function ArrowBackPage({ navigation }) {
   return (
-    <View style={styles.container}>
-        <AntDesign name="arrow-left" size={20} color={ColorTypes.TEXT_TITLE} />
-        <Text style={styles.text}>Voltar</Text>
-    </View>
+    <Pressable 
+        style={styles.container}
+        onPress={() => navigation.pop(1)}
+        >
+            <AntDesign name="arrow-left" size={20} color={ColorTypes.TEXT_TITLE} />
+            <Text style={styles.text}>Voltar</Text>
+    </Pressable>
   );
 }
 

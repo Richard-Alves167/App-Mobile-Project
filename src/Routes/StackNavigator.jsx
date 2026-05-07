@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignInScreen from '../screens/SignIn';
+import SignUpScreen from '../screens/SignUp';
 
 const Stack = createNativeStackNavigator()
 
@@ -18,15 +19,15 @@ export default function StackNavigation() {
                 name={Routes.SIGNIN}
                 component={SignInScreen}
             />
-            {/* <Stack.Screen
+            <Stack.Screen
                 name={Routes.SIGNUP}
                 component={SignUpScreen}
             />
-            <Stack.Screen
+            {/* <Stack.Screen
                 name={Routes.HOME}
                 component={HomeScreen}
-            />
-            <Stack.Screen
+            /> */}
+            {/* <Stack.Screen
                 name={Routes.DASHBOARD}
                 component={DashboardScreen}
             /> */}

@@ -6,19 +6,22 @@ import InputField from '../components/InputField';
 import ButtonComponent from '../components/SubmitButton';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
-export default function SignIn({ navigation }) {
+export default function SignUp({ navigation }) {
   return (
   <View style={styles.container}>
+    <ArrowBack navigation={navigation}/>
     <View style={styles.inputContainer}>
       <Image style={styles.logo} source={require('../assets/images/logo/LogoCafeKwaiCorMarromClaro.png')}/>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Cadastrar-se</Text>
+      <InputField label="Nome" placeholder="Digite seu nome" secure={false} icon={<MaterialIcons name="account-circle" size={24} color={ColorTypes.TEXT_TITLE} />} />
       <InputField label="Email" placeholder="Digite seu email" secure={false} icon={<MaterialIcons name="email" size={24} color={ColorTypes.TEXT_TITLE} />} />
       <InputField label="Senha" placeholder="Digite sua senha" secure={true} icon={<MaterialIcons name="password" size={24} color={ColorTypes.TEXT_TITLE} />} />
+      <InputField label="Confirmar Senha" placeholder="Confirme sua senha" secure={true} icon={<MaterialIcons name="password" size={24} color={ColorTypes.TEXT_TITLE} />} />
     </View>
     <View style={styles.buttonContainer}>
-      <ButtonComponent text="Entrar" function={() => console.log('Entrar')}/>
-      <Text style={styles.titleSignUp}>Não tem uma conta? Cadastre-se</Text>
-      <ButtonComponent text="Cadastrar" function={() => navigation.navigate(Routes.SIGNUP)}/>
+      <ButtonComponent text="Cadastrar" function={() => navigation.navigate(Routes.SIGNIN)}/>
+      <Text style={styles.titleSignUp}>Já tem uma conta? Faça Login</Text>
+      <ButtonComponent text="Login" function={() => navigation.navigate(Routes.SIGNIN)}/>
     </View>
   </View>
   )}
