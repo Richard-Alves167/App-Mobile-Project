@@ -6,6 +6,7 @@ import Routes from '.';
 import HomeScreen from '../screens/Home';
 import DashboardScreen from '../screens/Dashboard';
 import ProductScreen from '../screens/Product';
+import UserScreen from '../screens/User';
 
 const Drawer = createDrawerNavigator();
 
@@ -47,6 +48,10 @@ export default function DrawerNavigator() {
                 name={Routes.PRODUCT} 
                 component={ProductScreen} 
             />
+            <Drawer.Screen
+                name={Routes.USER}
+                component={UserScreen}
+            />
         </Drawer.Navigator>
     )
 }
@@ -72,9 +77,11 @@ function CustomDrawerContent(props) {
             </Text>
         </View>
         <View style={styles.divider} />
-        <View style={styles.accountInfo}>
+        <Pressable style={styles.accountInfo}
+            onPress={() => props.navigation.navigate(Routes.USER)}
+            >
           <MaterialIcons name="account-circle" size={40} color={ColorTypes.TEXT_TITLE}/><Text style={styles.title}>User</Text>
-        </View>
+        </Pressable>
         <View style={styles.divider2} />
         <DrawerItemList style={styles.listPages} {...props} />
         <View style={styles.divider3} />

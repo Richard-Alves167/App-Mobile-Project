@@ -3,7 +3,7 @@ import Routes from '../Routes/index';
 import ColorTypes from '../assets/ColorTypes';
 import ArrowBack from '../components/ArrowBackPage';
 
-export default function Home({ navigation }) {
+export default function Product({ navigation }) {
   return (
     <View style={styles.container}>
         <ArrowBack navigation={navigation}/>

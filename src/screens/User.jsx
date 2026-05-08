@@ -3,12 +3,12 @@ import Routes from '../Routes/index';
 import ColorTypes from '../assets/ColorTypes';
 import ArrowBack from '../components/ArrowBackPage';
 
-export default function Dashboard({ navigation }) {
+export default function User({ navigation }) {
   return (
     <View style={styles.container}>
         <ArrowBack navigation={navigation}/>
         <ImageBackground source={require('../assets/images/banner/coffeShopBackground.jpg')} style={styles.banner}>
-            <Text style={styles.text}>Dashboard: Café completo com os gatos!</Text>
+            <Text style={styles.text}>Bem Vindo, Usuário! Beba um café e brinque com os gatinhos!</Text>
         </ImageBackground>
     </View>
   )}
