@@ -5,6 +5,7 @@ import ColorTypes from '../assets/ColorTypes';
 import Routes from '.';
 import HomeScreen from '../screens/Home';
 import DashboardScreen from '../screens/Dashboard';
+import ProductScreen from '../screens/Product';
 
 const Drawer = createDrawerNavigator();
 
@@ -41,6 +42,10 @@ export default function DrawerNavigator() {
             <Drawer.Screen 
                 name={Routes.DASHBOARD} 
                 component={DashboardScreen} 
+            />
+            <Drawer.Screen 
+                name={Routes.PRODUCT} 
+                component={ProductScreen} 
             />
         </Drawer.Navigator>
     )

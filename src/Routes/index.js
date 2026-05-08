@@ -4,6 +4,7 @@ const Routes = {
         SIGNUP: 'SignUp',
         HOME: 'Home',
         DASHBOARD: 'Dashboard',
+        PRODUCT: 'Product',
     }
 
 export default Routes;
