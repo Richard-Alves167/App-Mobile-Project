@@ -4,6 +4,7 @@ import DrawerNavigator from '../Routes/DrawerNavigator';
 import SignInScreen from '../screens/SignIn';
 import SignUpScreen from '../screens/SignUp';
 import HomeScreen from '../screens/Home';
+import Dashboard from './DashboardNavigator';
 
 const Stack = createNativeStackNavigator()
 
@@ -12,7 +13,9 @@ export default function StackNavigation() {
     return (
         <Stack.Navigator 
         initialRouteName={Routes.SIGNIN}
-        >
+        screenOptions={{
+            headerShown: false,
+        }}>
             <Stack.Screen
                 name={Routes.SIGNIN}
                 component={SignInScreen}
@@ -30,6 +33,13 @@ export default function StackNavigation() {
             <Stack.Screen
                 name={Routes.DRAWER}
                 component={DrawerNavigator}
+                options={{ 
+                    headerShown: false 
+                }}
+            />
+            <Stack.Screen
+                name={Routes.DASHBOARD}
+                component={Dashboard}
                 options={{ 
                     headerShown: false 
                 }}

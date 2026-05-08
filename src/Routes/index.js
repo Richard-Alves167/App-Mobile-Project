@@ -1,9 +1,9 @@
 const Routes = {
         DRAWER: 'Drawer',
+        DASHBOARD: 'Dashboard',
         SIGNIN: 'SignIn',
         SIGNUP: 'SignUp',
         HOME: 'Home',
-        DASHBOARD: 'Dashboard',
         PRODUCT: 'Product',
         USER: 'User',
     }
