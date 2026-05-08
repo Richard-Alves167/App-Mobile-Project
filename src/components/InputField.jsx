@@ -3,15 +3,16 @@ import ColorTypes from '../assets/ColorTypes';
 import Fontisto from '@expo/vector-icons/Fontisto';
 
 export default function InputField(props) {
+
   return (
     <View style={styles.inputView}>
         <Text style={styles.text}>{props.label}</Text>
         <View style={styles.inputContainer}>
         {props.icon}
           {props.secure ? (
-              <TextInput style={styles.inputText} placeholder={props.placeholder} secureTextEntry={true}></TextInput>
+              <TextInput style={styles.inputText} placeholder={props.placeholder} secureTextEntry={true} onChangeText={props.onChangeText}></TextInput>
           ) : (
-              <TextInput style={styles.inputText} placeholder={props.placeholder}></TextInput>
+              <TextInput style={styles.inputText} placeholder={props.placeholder} onChangeText={props.onChangeText}></TextInput>
           )}
         </View>
     </View>
