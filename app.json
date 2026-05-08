@@ -1,29 +1,33 @@
 {
   "expo": {
-    "name": "App-Mobile",
+    "name": "KwaiCafe",
     "slug": "App-Mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/images/logo/iconeCafeKwaiComFundo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./src/assets/images/logo/logoCafeKwaiBrancoReduzido.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#471B01"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./src/assets/images/logo/iconeCafeKwai.png",
+        "backgroundColor": "#471B01"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "../assets/images/logo/iconeCafeKwaiComFundo.png"
+    },
+    "plugins": [
+      "expo-video",
+      "react-native-video"
+    ]
   }
 }
